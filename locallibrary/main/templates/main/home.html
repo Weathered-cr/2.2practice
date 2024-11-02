@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends 'main/base.html' %} 
+ 
+{% block title %}Главная страница{% endblock %} 
+ 
+{% block content %} 
+<h1>Добро пожаловать на сайт Design.pro!</h1> 
+{% if message %} 
+    <p>{{ message }}</p> 
+{% endif %} 
+{% endblock %}
